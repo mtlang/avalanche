@@ -33,7 +33,7 @@ var (
 )
 
 func main() {
-	kingpin.Version("0.3")
+	kingpin.Version("0.4m")
 	log.SetFlags(log.Ltime | log.Lshortfile) // Show file name and line in logs.
 	kingpin.CommandLine.Help = "avalanche - metrics test server"
 	kingpin.Parse()
