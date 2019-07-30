@@ -1,4 +1,4 @@
-module github.com/open-fresh/avalanche
+module github.com/mtlang/avalanche
 
 go 1.12
 

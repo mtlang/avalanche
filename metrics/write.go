@@ -15,12 +15,12 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/snappy"
-	"github.com/open-fresh/avalanche/pkg/download"
+	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/prometheus/prompb"
 
-	"github.com/open-fresh/avalanche/pkg/errors"
-	dto "github.com/prometheus/client_model/go"
+	"github.com/mtlang/avalanche/pkg/download"
+	"github.com/mtlang/avalanche/pkg/errors"
 )
 
 const maxErrMsgLen = 256

@@ -1,4 +1,4 @@
-# avalanche
+# Avalanche
 
 Avalanche serves a text-based [Prometheus metrics](https://prometheus.io/docs/instrumenting/exposition_formats/) endpoint for load testing [Prometheus](https://prometheus.io/) and possibly other [OpenMetrics](https://github.com/OpenObservability/OpenMetrics) consumers.
 
@@ -8,19 +8,22 @@ Metric names and unique series change over time to simulate series churn.
 
 Checkout the [blog post](https://blog.freshtracks.io/load-testing-prometheus-metric-ingestion-5b878711711c).
 
-## configuration flags 
+## Configuration Flags 
 ```bash 
 avalanche --help
 ```
 
-## run Docker image
+## Run Docker Image
 
 ```bash
 docker run quay.io/freshtracks.io/avalanche --help
 ```
 
-## build and run go binary
+## Build and Run Go Binary
 ```bash
-go get github.com/open-fresh/avalanche/cmd/...
+go get github.com/mtlang/avalanche/cmd/...
 avalanche --help
 ```
+
+## My Fork
+This repo was forked from [open-fresh/avalanche](https://github.com/open-fresh/avalanche). At the time of forking, the only major change I have made is to support disabling the --series-interval and --metric-interval settings. If either flag is set to 0, avalanche will either never change the "series" labels of its metrics or never change the names of its metrics, respectively. 

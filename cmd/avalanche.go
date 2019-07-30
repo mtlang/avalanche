@@ -8,9 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-fresh/avalanche/metrics"
-	"github.com/open-fresh/avalanche/pkg/download"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
+
+	"github.com/mtlang/avalanche/pkg/download"
+	"github.com/mtlang/avalanche/metrics"
 )
 
 var (
